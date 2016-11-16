@@ -1,4 +1,4 @@
-# ReduxSimpleStarter
+# ReduxSimpleStarter Code Along with Stephen Grider
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
