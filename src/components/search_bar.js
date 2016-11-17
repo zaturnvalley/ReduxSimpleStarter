@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
-  render() {
-    return <input id="yes" onChange={this.onInputChange} />;
-  }
+  constructor(props) {
+    super(props);
 
-  onInputChange(e) {
-    e.preventDefault();
-    console.log(e.target.value);
+    this.state = { term: '' };
+  }
+  
+  render() {
+    return <input id="yes" onChange={event => console.log(event.target.value)} />;
   }
 }
 
