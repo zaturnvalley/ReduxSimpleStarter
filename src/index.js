@@ -6,6 +6,10 @@ import SearchBar from './components/search_bar';
 
 const API_KEY = 'AIzaSyARaSW1WXqD7H68CwzQcamkKqSPOTIBjLQ';
 
+YTSearch({key: API_Key, term: 'surfboards'}, function(data) {
+  console.log(data);
+});
+
 // Step 1: Create a new component. This component
 // should produce some HTML
 const App = () => {
