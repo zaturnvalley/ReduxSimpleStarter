@@ -6,7 +6,7 @@ import SearchBar from './components/search_bar';
 
 const API_KEY = 'AIzaSyARaSW1WXqD7H68CwzQcamkKqSPOTIBjLQ';
 
-YTSearch({key: API_Key, term: 'surfboards'}, function(data) {
+YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
   console.log(data);
 });
 
