@@ -11,7 +11,12 @@ YTSearch({key: API_KEY, term: 'surfboards'}, function(data) {
 
 // Step 1: Create a new component. This component
 // should produce some HTML
-class App extend Component {
+class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = { videos: []};
+  }
   render(){
     return (
       <div>
