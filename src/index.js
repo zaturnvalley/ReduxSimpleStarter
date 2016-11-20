@@ -19,12 +19,14 @@ class App  extends Component {
       // above equals this.setState({ videos: videos }); via es6 synt sug
     });
   }
-  return (
-    <div>
-      <SearchBar />
-      <VideoList videos={this.state.videos} />
-    </div>
-  );
+  render(){
+    return (
+      <div>
+        <SearchBar />
+        <VideoList videos={this.state.videos} />
+      </div>
+    );
+  }
 }
 
 // Step 2: Take this component's generated HTML and
