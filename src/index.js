@@ -33,6 +33,7 @@ class App  extends Component {
   }
 
   render() {
+    //using lodash, debounce only calls search once every 300 milliseconds
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
 
     return (
